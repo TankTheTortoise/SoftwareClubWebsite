@@ -1,39 +1,14 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
-  height: 50px;
-}
 
-li {
-  float: left;
-}
 
-li a {
-  display: block;
+pre{
+  tab-size: 4;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space:pre-line;
+  display: inline;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  
 }
 
-li a:hover {
-  background-color: #222;
-}
-
-span {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-span:hover {
-  background-color: #222;
-}
 
 body {
   width: 100%;
@@ -42,23 +17,9 @@ body {
   position: absolute;
 }
 
-.dropdown {
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 13px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  background-color: #222;
-  color: white;
+#nav{
+  color:white;
 }
 
 #grey {
@@ -70,53 +31,97 @@ body {
   margin: 0;
 }
 
-.grid-container{
-   display: grid;
+.grid-container {
+  display: grid;
   grid-template-columns: auto auto auto auto auto;
   text-align: center;
   align-items: center;
   height: 80%;
+  gap: 0px;
+}
 
+.grid-container-rows {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+
+}
+
+.wall{
+  overflow: auto;
+  height: 150vh;
+  background-color: white;
   
-
 }
 
-.light-grey{
-    height: 100%;
-    background-color: rgba(200, 200, 200, 0.8);
-    border-radius: 20px;
+.light-grey {
+  background-color: #FFFFFF00;
+  column-gap: 10px;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  
 }
 
-.flask{
+.flask {
   background-image: url(../img/Flask_logo.svg);
   background-size: 300px;
-  width: 300px;
-  height: 300px;
-  background-repeat:no-repeat;
-
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
 }
 
-.css{
+.css {
   background-image: url(../img/CSS3_logo.svg);
-  background-size: 300px;
-  width: 300px;
-  height: 300px;
-  background-repeat:no-repeat;
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
 }
 
-.html5{
+.html5 {
   background-image: url(../img/html-5-logo.svg);
-  background-size: 300px;
-  width: 300px;
-  height: 300px;
-  background-repeat:no-repeat;
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
 }
 
-
-.js{
+.js {
   background-image: url(../img/logo-javascript.svg);
- background-size: 300px;
-  width: 300px;
-  height: 300px;
-  background-repeat:no-repeat;
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
 }
+
+.qr {
+  background-image: url(../img/qr-code.svg);
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  background-image: url(../img/softwareClubLogoName.png);
+  background-size: 80vh;
+  width: 80vh;
+  height: 80vh;
+  background-repeat: no-repeat;
+}
+
+* {
+  font-family: Arial;
+
+  font-size:large;
+}
+
+.website-text {
+  text-align: left;
+  width: 75%;
+  font-size:large;
+}
+
