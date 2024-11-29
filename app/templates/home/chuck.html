@@ -1,0 +1,43 @@
+{% extends "home/templates/home_index.html" %}} {% block title %} Chuck Norris
+{% endblock %} {% block body %}
+
+
+  <div class="flex">
+    <img src="" alt="Image" id="space" />
+
+    <div id="jokes" style="min-width: 30%"></div>
+
+    <div class="grid-container">
+      <button class="btn btn-dark" id="any">Any</button>
+      <button class="btn btn-dark" id="animal">animal</button>
+      <button class="btn btn-dark" id="celebrity">celebrity</button>
+      <button class="btn btn-dark" id="dev">dev</button>
+      <button class="btn btn-dark" id="explicit">explicit</button>
+      <button class="btn btn-dark" id="fashion">fashion</button>
+      <button class="btn btn-dark" id="food">food</button>
+      <button class="btn btn-dark" id="history">history</button>
+      <button class="btn btn-dark" id="money">money</button>
+      <button class="btn btn-dark" id="movie">movie</button>
+      <button class="btn btn-dark" id="music">music</button>
+      <button class="btn btn-dark" id="political">political</button>
+      <button class="btn btn-dark" id="religion">religion</button>
+      <button class="btn btn-dark" id="science">science</button>
+      <button class="btn btn-dark" id="sport">sport</button>
+      <button class="btn btn-dark" id="travel">travel</button>
+      
+      <div class="flex">
+          <input class="form-control me-2" type="search" id="search" style="margin:10px;"></input>
+          <button class="btn btn-dark" style="height:25%; width:75%;" id="searcher">
+            Search
+          </button>
+      </div>
+    </div>
+  </div>
+  <link
+    rel="stylesheet"
+    href="{{url_for('static', filename='css/chuck.css')}}"
+  />
+  <script src="{{url_for('static', filename='js/app.js')}}"></script>
+
+  {% endblock %}
+
